@@ -1,0 +1,832 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netcore-Website</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+  
+    <!-- <div class="main">
+    <div id="nav">
+      <div class="navli">
+        <h4>Home</h4>
+        <h4>Company</h4>
+        <h4>Portfolio</h4>
+        <h4>Services</h4>
+      </div>
+        <img src="{% static 'img/logonetcore.png' %}" alt="">
+      <div class="navli">
+        <h4>Carrer</h4>
+        <h4>Blog</h4>
+        <h4>Contact Us</h4>
+      </div>
+    </div>
+  </div> -->
+
+  <!--# ======================================================================= -->
+<!--#                                 Header                                  -->
+<!--# ======================================================================= -->
+<header class="main-header position-fixed w-100" style="background-color: white; padding: 20px 0px; height: 15vh; max-height: 170px;">
+  <div class="container">
+    <nav class="navbar navbar-expand-xl py-0">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <img src="{% static 'img/logonetcore.png' %}" alt="" style="width: 14vw; min-width: 120px; margin-right: 12vw; ">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link text-capitalize" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-capitalize" aria-current="page" href="#">Company</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-capitalize" href="#">Portolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-capitalize" href="#">Blog</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center">
+          <a class="btn btn-warning btn-hover-secondery text-capitalize" href="#">Contact us</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark text-warning"></i></button>
+    </div>
+    <div class="offcanvas-body pt-0">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-capitalize" aria-current="page" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize" href="#">Pricing </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize" href="#">Elements </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize" href="#">blog </a>
+        </li>
+      </ul>
+      <div class="login d-block align-items-center mt-3">
+        <a class="btn btn-warning text-capitalize w-100" href="#">contact us</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--# ======================================================================= -->
+<!--#                              Hero section                       -->
+<!--# ======================================================================= -->
+
+<div class="container-fluid pt-5">
+  <div class="row mb-4 mb-lg-5 justify-content-lg-between">
+      <div class="col-3 col-md-1 col-lg-2 d-none d-md-flex align-items-center">
+          <div class="lc-block bg-dark ratio ratio-1x1" style="opacity:0.1
+"> </div><!-- /lc-block -->
+      </div><!-- /col -->
+      <div class="col-4 col-md-3 col-lg-2 d-flex flex-column justify-content-between">
+          <div class="lc-block bg-primary ratio ratio-1x1" style="opacity:0.1
+"> </div><!-- /lc-block -->
+          <div class="lc-block">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1531445075774-bfb641f42229?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Njd8fGJ1aWxkaW5nfGVufDB8Mnx8fDE2MzQ1NTE3NDg&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" alt="Photo by Meriç Dağlı">
+          </div><!-- /lc-block -->
+      </div><!-- /col -->
+      <div class="col-4 col-md-4 col-lg-3"> <img class="img-fluid" src="https://images.unsplash.com/photo-1526546334624-2afe5b01088d?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MzF8fGJ1aWxkaW5nfGVufDB8MXx8fDE2MzQ1NTE2NTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080" style="object-fit:cover" alt="Photo by Simone Hutsch"></div><!-- /col -->
+      <div class="col-4 col-md-3 col-lg-2 d-flex flex-column justify-content-between">
+          <div class="lc-block">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1528810084506-41bd091551af?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NDJ8fGJ1aWxkaW5nfGVufDB8Mnx8fDE2MzQ1NTE3NDE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" alt="Photo by Simone Hutsch">
+          </div><!-- /lc-block -->
+          <div class="lc-block bg-primary ratio ratio-1x1 " style="opacity:0.1
+"> </div><!-- /lc-block -->
+      </div><!-- /col -->
+      <div class="col-3 col-md-1 col-lg-2 d-none d-md-flex  align-items-center">
+          <div class="lc-block bg-dark ratio ratio-1x1" style="opacity:0.1
+"> </div><!-- /lc-block -->
+      </div><!-- /col -->
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-center">
+      <div class="text-center">
+          <div >
+              <h1 class="rfs-25 fw-bold">Think Solution. Think <br>NetcoreInfo</h1>
+          </div>
+          <div>
+            <p class="lead">Transform your OFFLINE Business into an ONLINE presence with NetcoreInfo.</p>
+        </div>
+      </div>
+  </div>
+
+<!--# ======================================================================= -->
+<!--#                              About section                       -->
+<!--# ======================================================================= -->
+<section>
+  <div class="container-fluid pt-5">
+    <div class="row justify-content-center">
+      <div class="text-center fs-2 text-black">
+          <div>
+              <br>
+              <br>
+              <h1 class="fw-bold">About Us</h1>
+              <br>
+          </div>
+      </div>
+  </div>
+    <div class="row mb-4 align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="lc-block text-center">
+                <img class="img-fluid w-50" src="https://cdn.livecanvas.com/media/svg/isometric/app_development_SVG.svg" srcset="" sizes="" width="" height="">
+            </div><!-- /lc-block -->
+        </div><!-- /col -->
+        <div class="col-lg-6 p-lg-6">
+            <div class="lc-block mb-5">
+                <div editable="rich">
+
+                    <h2 class="display-6 fw-bold">About Company</h2>
+
+                    <p class="lead"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a lacus est. Etiam diam metus.</p>
+                </div>
+            </div><!-- /lc-block -->
+            <!-- /lc-block -->
+            <div class="lc-block">
+                <div class="d-inline-flex">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-primary" viewBox="0 0 16 16" lc-helper="svg-icon">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="ms-3 align-self-center" editable="rich">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lc-block">
+                <div class="d-inline-flex">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-primary" viewBox="0 0 16 16" lc-helper="svg-icon">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="ms-3 align-self-center" editable="rich">
+                        <p>Consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lc-block">
+                <div class="d-inline-flex">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-primary" viewBox="0 0 16 16" lc-helper="svg-icon">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="ms-3 align-self-center" editable="rich">
+                        <p>Aenean vel nisi in ipsum congue</p>
+                    </div>
+                </div>
+            </div><!-- /lc-block -->
+        </div><!-- /col -->
+    </div>
+    <div class="row mb-4 align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0 order-lg-1">
+            <div class="lc-block text-center">
+                <img class="img-fluid w-50" src="https://cdn.livecanvas.com/media/svg/isometric/Startup_SVG.svg" srcset="" sizes="" width="" height="">
+            </div><!-- /lc-block -->
+        </div><!-- /col -->
+        <div class="col-lg-6 p-lg-6">
+            <div class="lc-block mb-5">
+                <div editable="rich">
+
+                    <h2 class="display-6 fw-bold">Global Connection</h2>
+
+                    <p class="lead"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a lacus est. Etiam diam metus.</p>
+                </div>
+            </div><!-- /lc-block -->
+            <!-- /lc-block -->
+            <div class="lc-block">
+                <div class="d-inline-flex">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-primary" viewBox="0 0 16 16" lc-helper="svg-icon">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="ms-3 align-self-center" editable="rich">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lc-block">
+                <div class="d-inline-flex">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-primary" viewBox="0 0 16 16" lc-helper="svg-icon">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="ms-3 align-self-center" editable="rich">
+                        <p>Consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lc-block">
+                <div class="d-inline-flex">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-primary" viewBox="0 0 16 16" lc-helper="svg-icon">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="ms-3 align-self-center" editable="rich">
+                        <p>Aenean vel nisi in ipsum congue</p>
+                    </div>
+                </div>
+            </div><!-- /lc-block -->
+        </div><!-- /col -->
+    </div>
+
+</div>
+
+</section>
+
+<!--# ======================================================================= -->
+<!--#                             Service Section                             -->
+<!--# ======================================================================= -->
+<section class="our-service position-relative overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-8 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+        <img src="https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=665&q=80" class="img-fluid" />
+      </div>
+      <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ps-xxl-0 ps-xl-0 ps-lg-3 ps-md-3 ps-sm-3 ps-3">
+        <small class="fs-7 d-block">Our Service</small>
+        <h2 class="fs-2 text-black mb-0">Our Featured Service that We Provide</h2>
+        <p class="mb-0 fw-500 fs-7">Seamlessly see the tasks that need your attention, check when your next meeting is coming up, and keep up with your progress.</p>
+        <ul class="list-unstyled mb-0 pl-0">
+          <li class="d-flex flex-wrap align-items-start">
+            <i class="fa-solid fa-circle-check fs-4 pe-2"></i>
+            <span class="fs-7 text-black">List of the tasks that require your attention.</span>
+          </li>
+          <li class="d-flex flex-wrap align-items-start">
+            <i class="fa-solid fa-circle-check fs-4 pe-2"></i>
+            <span class="fs-7 text-black">Google Calendar integration to see when interruptions will happen</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--# ======================================================================= -->
+<!--#                             Service Section                             -->
+<!--# ======================================================================= -->
+<section class="service position-relative overflow-hidden">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-12"><small class="fs-7 d-block">Working Process</small></div>
+      <div class="col-12 d-flex align-items-center justify-content-between">
+        <h2 class="fs-2 text-black mb-0">
+          Our Featured Service<br />
+          that We Provide
+        </h2>
+        <a href="#" class="btn btn-warning btn-hover-secondery section-btn">All Services</a>
+      </div>
+      <div class="col-12 d-flex justify-content-between">
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 text-center">
+          <div class="card border-0 shadow">
+            <div class="card-body">
+              <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
+                <i class="fa-solid fa-download text-primary position-relative"></i>
+              </div>
+              <h5 class="mb-0 fw-500">Service Name</h5>
+              <h3 class="fs-4">Second heading</h3>
+              <p class="fs-7 mb-0 fw-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 text-center">
+          <div class="card border-0 shadow">
+            <div class="card-body">
+              <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
+                <i class="fa-solid fa-download text-primary position-relative"></i>
+              </div>
+              <h5 class="mb-0 fw-500">Service Name</h5>
+              <h3 class="fs-4">Second heading</h3>
+              <p class="fs-7 mb-0 fw-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 text-center">
+          <div class="card border-0 shadow">
+            <div class="card-body">
+              <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
+                <i class="fa-solid fa-download text-primary position-relative"></i>
+              </div>
+              <h5 class="mb-0 fw-500">Service Name</h5>
+              <h3 class="fs-4">Second heading</h3>
+              <p class="fs-7 mb-0 fw-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 text-center">
+          <div class="card border-0 shadow">
+            <div class="card-body">
+              <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
+                <i class="fa-solid fa-download text-primary position-relative"></i>
+              </div>
+              <h5 class="mb-0 fw-500">Service Name</h5>
+              <h3 class="fs-4">Second heading</h3>
+              <p class="fs-7 mb-0 fw-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--# ======================================================================= -->
+<!--#                            Portfolio Section                            -->
+<!--# ======================================================================= -->
+<section class="portfolio position-relative bg-primary">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-12"><small class="fs-7 d-block text-warning">Testimonial Section</small></div>
+      <div class="col-12 d-xxl-flex d-xl-flex d-lg-flex d-md-flex d-sm-block d-block align-items-center justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-sm-center">
+        <h2 class="fs-3 text-white mb-0">
+          Client<br />
+          Testimonials
+        </h2>
+        <a href="#" class="btn btn-warning btn-hover-secondery section-btn">Open Portfolio</a>
+      </div>
+    </div>
+    <div class="row d-flex flex-wrap justify-content-center step-row">
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+        <div class="card bg-transparent">
+          <div class="card-body">
+            <div class="icon mx-auto rounded-circle d-flex justify-content-center align-items-center"><i class="ti ti-brand-github text-white"></i></div>
+            <h3 class="fs-4 text-white">Mr XYZ</h3>
+            <p class="fs-7 mb-0 fw-500">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+        <div class="card bg-transparent">
+          <div class="card-body">
+            <div class="icon mx-auto rounded-circle d-flex justify-content-center align-items-center"><i class="ti ti-crown text-white"></i></div>
+            <h3 class="fs-4 text-white">Mr ABC</h3>
+            <p class="fs-7 mb-0 fw-500">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+        <div class="card bg-transparent">
+          <div class="card-body">
+            <div class="icon mx-auto rounded-circle d-flex justify-content-center align-items-center"><i class="ti ti-message-circle-2 text-white"></i></div>
+            <h3 class="fs-4 text-white">Mr PQR</h3>
+            <p class="fs-7 mb-0 fw-500">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--# ======================================================================= -->
+<!--#                             Blog section                                -->
+<!--# ======================================================================= -->
+
+<section class="ftco-section">
+  <br>
+  <br>
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-2">
+      <div class="col-md-7 heading-section text-center">
+        <br>
+        <br>
+        <h2 class="mb-4">Blogs</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos officia voluptatem qui beatae in atque aperiam sequi consectetur nesciunt. Rerum?</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="images/image_1.jpg" class="card-img-top" alt="Blog Image">
+          <div class="card-body">
+            <span class="category mb-3 d-block"><a href="#">Technology</a></span>
+            <h3 class="mb-4"><a href="#">The Newest Technology On This Year 2019</a></h3>
+            <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost</p>
+            <div class="author mb-4 d-flex align-items-center">
+              <img src="images/person_2.jpg" class="img" alt="Author Image">
+              <div class="ml-3 info">
+                <span>Written by</span>
+                <h3><a href="#">Dave Lewis</a>, <span>Nov. 28, 2018</span></h3>
+              </div>
+            </div>
+            <div class="meta-wrap align-items-center">
+              <div class="half order-md-last">
+                <p class="meta">
+                  <span><i class="icon-heart"></i>3</span>
+                  <span><i class="icon-eye"></i>100</span>
+                  <span><i class="icon-comment"></i>5</span>
+                </p>
+              </div>
+              <div class="half">
+                <p><a href="#" class="btn btn-primary py-2">Continue Reading <span class="ion-ios-arrow-forward"></span></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="images/image_2.jpg" class="card-img-top" alt="Blog Image">
+          <div class="card-body">
+            <span class="category mb-3 d-block"><a href="#">Travel</a></span>
+            <h3 class="mb-4"><a href="#">What to pack when visiting Sea</a></h3>
+            <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost</p>
+            <div class="author mb-4 d-flex align-items-center">
+              <img src="images/person_1.jpg" class="img" alt="Author Image">
+              <div class="ml-3 info">
+                <span>Written by</span>
+                <h3><a href="#">Dave Lewis</a>, <span>Nov. 28, 2018</span></h3>
+              </div>
+            </div>
+            <div class="meta-wrap align-items-center">
+              <div class="half order-md-last">
+                <p class="meta">
+                  <span><i class="icon-heart"></i>3</span>
+                  <span><i class="icon-eye"></i>100</span>
+                  <span><i class="icon-comment"></i>5</span>
+                </p>
+              </div>
+              <div class="half">
+                <p><a href="#" class="btn btn-primary py-2">Continue Reading <span class="ion-ios-arrow-forward"></span></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="images/image_3.jpg" class="card-img-top" alt="Blog Image">
+          <div class="card-body">
+            <span class="category mb-3 d-block"><a href="#">Fashion</a></span>
+            <h3 class="mb-4"><a href="#">Awesome Fashion Trend in For Summer</a></h3>
+            <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost</p>
+            <div class="author mb-4 d-flex align-items-center">
+              <img src="images/person_3.jpg" class="img" alt="Author Image">
+              <div class="ml-3 info">
+                <span>Written by</span>
+                <h3><a href="#">Dave Lewis</a>, <span>Nov. 28, 2018</span></h3>
+              </div>
+            </div>
+            <div class="meta-wrap align-items-center">
+              <div class="half order-md-last">
+                <p class="meta">
+                  <span><i class="icon-heart"></i>3</span>
+                  <span><i class="icon-eye"></i>100</span>
+                  <span><i class="icon-comment"></i>5</span>
+                </p>
+              </div>
+              <div class="half">
+                <p><a href="#" class="btn btn-primary py-2">Continue Reading <span class="ion-ios-arrow-forward"></span></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- # ======================================================================= -->
+<!--#                             Pricing Section                             -->
+<!--# ======================================================================= -->
+<section class="pricing position-relative overflow-hidden">
+  <div class="container position-relative">
+    <div class="row justify-content-center">
+      <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+        <small class="fs-7 d-block">Pricing Plan</small>
+        <h2 class="fs-3 pricing-head text-black mb-0 position-relative">What’s About Our Pricing Subscription</h2>
+      </div>
+    </div>
+    <div class="row plans">
+      <div class="col-12 text-center">
+        <div class="form-check form-switch d-flex justify-content-center ps-0 align-items-center">
+          <label class="form-check-label text-black fs-7" for="flexSwitchCheckChecked">Monthly</label>
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+          <label class="form-check-label text-black fs-7" for="flexSwitchCheckChecked">Yearly</label>
+        </div>
+        <div class="save d-inline-block position-relative text-warning fw-500 fs-9 text-center">Save Up To 58%</div>
+      </div>
+    </div>
+    <div class="row justify-content-center price-plan">
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+        <div class="card position-relative shadow border-0 h-100">
+          <div class="card-body pb-4">
+            <small class="fs-7 d-block text-warning text-center">Personal</small>
+            <h2 class="mb-4 text-center position-relative"><sub class="fs-2 text-black">0</sub><sup class="fs-6 position-absolute">$</sup></h2>
+            <small class="fs-7 d-block text-center">Free</small>
+            <p class="fs-7 text-center fw-500">For individuals looking for a simple CRM solution</p>
+            <ul class="list-unstyled mb-0 pl-0">
+              <li class="d-flex align-items-start">
+                <i class="ti ti-circle-check fs-4 pe-2"></i>
+                <span class="fs-7 text-black">Basic CRM features</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="ti ti-circle-check fs-4 pe-2"></i>
+                <span class="fs-7 text-black">Unlimited Personal Pipelines</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="ti ti-circle-check fs-4 pe-2"></i>
+                <span class="fs-7 text-black">Email Power Tools</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-action text-center pb-xxl-5 pb-xl-5 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
+            <a href="#" class="btn btn-warning btn-hover-secondery text-capitalize">Set Started</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+        <div class="card position-relative shadow border-0 h-100">
+          <div class="position-absolute badge bg-warning d-inline-block mx-auto">Most Popular</div>
+          <div class="card-body pb-4">
+            <small class="fs-7 d-block text-warning text-center">Professional</small>
+            <h2 class="mb-4 text-center position-relative"><sub class="fs-2 text-black">49</sub><sup class="fs-6 position-absolute">$</sup></h2>
+            <small class="fs-7 d-block text-center">Free</small>
+            <p class="fs-7 text-center fw-500">For individuals looking for a simple CRM solution</p>
+            <ul class="list-unstyled mb-0 pl-0">
+              <li class="d-flex align-items-start">
+                <i class="ti ti-circle-check fs-4 pe-2"></i>
+                <span class="fs-7 text-black">Basic CRM features</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="ti ti-circle-check fs-4 pe-2"></i>
+                <span class="fs-7 text-black">Unlimited Personal Pipelines</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="ti ti-circle-check fs-4 pe-2"></i>
+                <span class="fs-7 text-black">Email Power Tools</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="ti ti-circle-check fs-4 pe-2"></i>
+                <span class="fs-7 text-black">Unlimited Shared Pipelines</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-action text-center pb-xxl-5 pb-xl-5 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
+            <a href="#" class="btn btn-warning btn-hover-secondery text-capitalize">Set Started</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+        <div class="card position-relative shadow border-0 h-100">
+          <div class="card-body pb-4">
+            <small class="fs-7 d-block text-warning text-center">Enterprise</small>
+            <h2 class="mb-4 text-center position-relative"><sub class="fs-2 text-black">99</sub><sup class="fs-6 position-absolute">$</sup></h2>
+            <small class="fs-7 d-block text-center">Free</small>
+            <p class="fs-7 text-center fw-500">For individuals looking for a simple CRM solution</p>
+            <ul class="list-unstyled mb-0 pl-0">
+              <li class="d-flex align-items-start">
+                <i class="ti ti-circle-check fs-4 pe-2"></i>
+                <span class="fs-7 text-black">Basic CRM features</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="ti ti-circle-check fs-4 pe-2"></i>
+                <span class="fs-7 text-black">Unlimited Personal Pipelines</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="ti ti-circle-check fs-4 pe-2"></i>
+                <span class="fs-7 text-black">Email Power Tools</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="ti ti-circle-check fs-4 pe-2"></i>
+                <span class="fs-7 text-black">Unlimited Shared Pipelines</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="ti ti-circle-check fs-4 pe-2"></i>
+                <span class="fs-7 text-black"> Full API Access</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-action text-center pb-xxl-5 pb-xl-5 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
+            <a href="#" class="btn btn-warning btn-hover-secondery text-capitalize">Set Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--# ======================================================================= -->
+<!--#                               FAQ Section                               -->
+<!--# ======================================================================= -->
+<section class="faq position-relative overflow-hidden">
+  <div class="container position-relative">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <small class="fs-7 d-block">Frequently Asked Questions</small>
+        <h2 class="fs-3 text-black mb-0">Want to ask something from us?</h2>
+      </div>
+    </div>
+    <div class="accordion-block">
+      <div class="accordion row" id="accordionPanelsStayOpenExample">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Letraset sheets containing sum passages ?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body fs-7 fw-500 pt-0">Seamlessly see the tasks that need your attention, check when your next meeting is coming up, and keep up with your progress.</div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                There are many variations ?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body fs-7 fw-500 pt-0">Seamlessly see the tasks that need your attention, check when your next meeting is coming up, and keep up with your progress.</div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Lorem Ipsum generators on the Internet tend ?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body fs-7 fw-500 pt-0">Seamlessly see the tasks that need your attention, check when your next meeting is coming up, and keep up with your progress.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="panelsStayOpen-headingfour">
+              <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+                Various versions have evolved over the ?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfour">
+              <div class="accordion-body fs-7 fw-500 pt-0">Seamlessly see the tasks that need your attention, check when your next meeting is coming up, and keep up with your progress.</div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+              <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
+                Finibus bonorum et malorum ?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfour">
+              <div class="accordion-body fs-7 fw-500 pt-0">Seamlessly see the tasks that need your attention, check when your next meeting is coming up, and keep up with your progress.</div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="panelsStayOpen-headingsix">
+              <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="false" aria-controls="panelsStayOpen-collapsesix">
+                Many desktop publishing packages ?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingsix">
+              <div class="accordion-body fs-7 fw-500 pt-0">Seamlessly see the tasks that need your attention, check when your next meeting is coming up, and keep up with your progress.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--# ======================================================================= -->
+<!--#                             Contact Section                             -->
+<!--# ======================================================================= -->
+<section class="contact bg-primary position-relative overflow-hidden">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+        <small class="fs-7 d-block text-warning">Join us Now</small>
+        <h2 class="fs-3 text-white mb-0">Ready to try the product for free?</h2>
+      </div>
+      <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+        <form class="position-relative">
+          <div class="row ps-xxl-5 ps-xl-5 ps-lg-3 ps-md-0 ps-sm-0 ps-0">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="form-group">
+                <label class="form-label text-white fs-7 mb-3">Full Name</label>
+                <input type="text" class="form-control border-0" placeholder="Enter your name" />
+              </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="form-group">
+                <label class="form-label text-white fs-7 mb-3">User Name</label>
+                <input type="text" class="form-control border-0" placeholder="Enter your username" />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label text-white fs-7 mb-3">Email address</label>
+                <input type="email" class="form-control border-0" placeholder="Enter your email address" />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label text-white fs-7 mb-3">Email Password</label>
+                <input type="text" class="form-control border-0" placeholder="Enter your password" />
+              </div>
+            </div>
+
+            <div class="agree fs-7 fw-500">By clicking on the Sign Up button, you agree to Rakon.<br /><a href="#" class="text-warning text-decoration-none">terms and conditions of use.</a></div>
+            <div class="col-12">
+              <button class="btn btn-warning btn-hover-secondery text-capitalize mt-2 w-auto contact-btn">Try for Free</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--# ======================================================================= -->
+<!--#                             Footer Section                              -->
+<!--# ======================================================================= -->
+<footer class="footer" style="width: 100vw; position:absolute ; left:0px; padding:10vw 10vh">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <div class="footer-logo-col">
+
+          <p class="blue-light mb-0 fs-7 fw-500">Wealth Wave is a simple website build using Bootstrap 5.</p>
+          <div class="callus text-white fw-500 fs-7">
+            India, Maharashtra
+            <div class="blue-light">Call us: <a href="#" class="text-warning fw-500 fs-7 text-decoration-none">969-898-9699</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12">
+        <h5 class="text-white">Social</h5>
+        <ul class="list-unstyled mb-0 pl-0">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12">
+        <h5 class="text-white">Company</h5>
+        <ul class="list-unstyled mb-0 pl-0">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Affiliates</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Legal & Privacy</a></li>
+        </ul>
+      </div>
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <div class="subscribe">
+          <h5 class="text-white">Subscribe</h5>
+          <p class="blue-light fw-500">Join Our Newsletter</p>
+          <div class="input-group">
+            <input type="email" class="form-control br-15" placeholder="Enter email address" aria-label="Enter email address" aria-describedby="button-addon2" />
+            <button class="btn btn-warning btn-hover-secondery ms-xxl-2 ms-xl-2 ls-lg-0 ms-md-0 ms-sm-0 ms-0" type="button" id="button-addon2">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyrights text-center blue-light fw-500">
+      All Rights Reserved by <a href="https://vishalzen.netlify.app/" class="blue-light text-decoration-none">Vishal Vishwakarma</a> - &copy; Copyright <span id="autodate">2023</span>
+    </div>
+  </div>
+</footer>
+
+   
+    <script href="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
